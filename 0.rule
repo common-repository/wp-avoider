@@ -1,0 +1,3 @@
+RewriteCond %{HTTPS} on [NC,OR]
+RewriteCond %{HTTP_HOST} ^www\.
+RewriteRule ^(.*)$ http://yourdomain.com/$1 [R=301,L]
